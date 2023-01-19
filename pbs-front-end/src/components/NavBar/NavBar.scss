@@ -1,0 +1,32 @@
+.navBar__section {
+    text-align: center;
+}
+.navBar__logo {
+    display: inline;
+    margin: 800px;
+}
+.navBar__link {
+    display: inline-block;
+    margin: 25px;
+    font-size: 11px;
+}
+
+.navBar__logo a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+.navBar__logo a:hover {
+    text-decoration: underline;
+}
+.navBar__link a {
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+}
+.navBar__link a:hover {
+    text-decoration: underline;
+}
+// .navBar__text {
+//     display: inline;
+//     margin-left: 505px;
+// }
