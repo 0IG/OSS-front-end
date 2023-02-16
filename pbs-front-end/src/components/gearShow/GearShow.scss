@@ -1,0 +1,15 @@
+.gearCard {
+
+    &__img {
+        max-height: 480px;
+        max-width: 320px;
+    }
+
+    &__title{
+        font-size: 11px;
+    }
+
+    &__price{
+        font-size: 11px;
+    }
+}
