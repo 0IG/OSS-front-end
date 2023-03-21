@@ -2,6 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 // Component Imports
 import NavBar from "./components/navBar/NavBar";
+import LeftPanel from "./components/leftPanel/LeftPanel";
 import Home from "./components/home/Home";
 import GearIndex from "./components/gearIndex/GearIndex";
 // Page Imports

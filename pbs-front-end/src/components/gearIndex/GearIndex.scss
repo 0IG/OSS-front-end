@@ -1,0 +1,11 @@
+.gearIndex {
+    // margin: 60px 20px;
+    display: flex;
+    margin: 40px;
+    &__container {
+        display: grid;
+        margin: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: max-content;
+    }
+}

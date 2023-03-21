@@ -1,0 +1,17 @@
+.leftPanel {
+      max-height: 300px;
+      width: 240px;
+
+   &__allItemsList{
+      padding: 20px;
+      font-size: 11px;
+      list-style-type: none;
+   }
+
+   &__designersList{
+      padding: 20px;
+      height: 100vh;
+      font-size: 11px;
+      list-style-type: none;
+   }
+}
