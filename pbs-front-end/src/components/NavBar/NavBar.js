@@ -1,12 +1,18 @@
 // import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import logo from "../logo.png";
+import { Link } from "react-router-dom";
+
 export default function NavBar() {
   return (
     <div className="navBar">
       <div className="navBar__container">
         <ul className="navBar__itemList">
-          <li className="navBar__item">MENSWEAR</li>
+          <li className="navBar__item">
+            <Link to="/mens" className="navBar__item">
+              MENSWEAR
+            </Link>
+          </li>
           <li className="navBar__item">WOMENSWEAR</li>
           <li className="navBar__item">MISC</li>
           <li className="navBar__item">SALE</li>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ItemCard.scss";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const ItemCard = ({ item }) => {
   const [gear, setGear] = useState([]);
@@ -25,14 +26,16 @@ export const ItemCard = ({ item }) => {
   } = item;
 
   return (
-    <div className="itemCard">
-      <div className="itemCard__name"></div>
-      <div className="itemCard__price"></div>
-      <div className="itemCard__rating"></div>
-      <div className="itemCard__image">
-        <img src=""></img>
+    <Link to={`/mens/${id}`}>
+      <div className="itemCard">
+        <div className="itemCard__name"></div>
+        <div className="itemCard__price"></div>
+        <div className="itemCard__rating"></div>
+        <div className="itemCard__image">
+          <img src=""></img>
+        </div>
+        <div className="itemCard__link"></div>
       </div>
-      <div className="itemCard__link"></div>
-    </div>
+    </Link>
   );
 };
