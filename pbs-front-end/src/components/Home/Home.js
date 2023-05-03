@@ -3,8 +3,8 @@ import "./Home.scss";
 
 export default function Home() {
   return (
-    <div>
-      <h2 className="home__title">The Postion before submission</h2>
+    <div className="home">
+      <div className="home__title">Hi 😃</div>
     </div>
   );
 }

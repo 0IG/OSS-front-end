@@ -1,0 +1,17 @@
+.FourOFour {
+	display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: none;
+    margin-top: 300px;
+
+
+    &__404{
+        font-size: 250px;
+    }
+
+    &__text{
+        font-size: 40px;
+    }
+}

@@ -13,18 +13,48 @@ export default function NavBar() {
               MENSWEAR
             </Link>
           </li>
-          <li className="navBar__item">WOMENSWEAR</li>
-          <li className="navBar__item">MISC</li>
-          <li className="navBar__item">SALE</li>
+          <li className="navBar__item">
+            <Link to="/womens" className="navBar__item">
+              WOMENSWEAR
+            </Link>
+          </li>
+          <li className="navBar__item">
+            <Link to="/misc" className="navBar__item">
+              MISC
+            </Link>
+          </li>
+          <li className="navBar__item">
+            <Link to="/sale" className="navBar__item">
+              SALE
+            </Link>
+          </li>
         </ul>
         <nav className="navBar__logo">
-          <img className="navBar__img" src={logo} alt="logo"></img>
+          <Link to="/" className="navBar__img">
+            <img className="navBar__img" src={logo} alt="logo"></img>
+          </Link>
         </nav>
         <ul className="navBar__itemList">
-          <li className="navBar__item">ENG</li>
-          <li className="navBar__item">LOGIN</li>
-          <li className="navBar__item">WISHLIST</li>
-          <li className="navBar__item">CART</li>
+          <li className="navBar__item">
+            <Link to="/language" className="navBar__item">
+              ENG
+            </Link>
+          </li>
+          <li className="navBar__item">
+            <Link to="/login" className="navBar__item">
+              LOGIN
+            </Link>
+          </li>
+          <li className="navBar__item">
+            <Link to="/wishlist" className="navBar__item">
+              WISHLIST
+            </Link>
+          </li>
+          <li className="navBar__item">
+            <Link to="/cart" className="navBar__item">
+              CART
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
