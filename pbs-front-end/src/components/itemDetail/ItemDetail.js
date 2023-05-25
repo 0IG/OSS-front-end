@@ -1,28 +1,48 @@
 import React from "react";
 import "./ItemDetail.scss";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 export default function ItemDetail() {
+  const [info, setInfo] = useState({});
+  const { productId } = useParams();
+  useEffect(() => {
+    axios
+      .get(`http://localhost:9000/gear/${productId}/`)
+      .then((response) => {
+        setInfo(response.data.payload);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div className="itemDetail">
-      <div className="itemDetail__itemDesigner">MAISON MARGIELA</div>
-      <div className="itemDetail__itemDesc">Silver Engraved Ring</div>
-      <div className="itemDetail__itemInfo">
-        Band ring in silver-tone brass.
+      <div className="itemDetail__details">
+        <div className="itemDetail__itemDesigner">{info.name}</div>
+        <div className="itemDetail__itemDesc">{info.description}</div>
+        <div className="itemDetail__itemInfo">{info.description}</div>
+        <div className="itemDetail__detail">{info.detail1}</div>
+        <div className="itemDetail__detail">{info.detail2}</div>
+        <div className="itemDetail__color">Supplier color: {info.color}</div>
+        <div className="itemDetail__materials">{info.materials}</div>
+        <div className="itemDetail__manufactured">
+          Made in {info.manufactured}.
+        </div>
       </div>
-      <div className="itemDetail__detail">
-        Red crystal-cut accents and filigree detailing throughout.
-      </div>
-      <div className="itemDetail__detail">Logo engraved at inner band</div>
       <div className="itemDetail__image">
-        <img
-          className="itemDetail__img"
-          src="https://img.ssensemedia.com/images/b_white,g_center,f_auto,q_auto:best/222168M147026_1/maison-margiela-silver-engraved-ring.jpg"
-          alt="image"
-        />
+        <img className="itemDetail__img" src={`${info.image}`} alt="image" />
       </div>
       <div className="itemDetail__addToCart">
-        <div className="itemDetail__price">$390 USD</div>
+        <div className="itemDetail__price">${info.price} USD</div>
         <select className="itemDetail__select">
           <option className="">SELECT A SIZE</option>
+          <option className="">S</option>
+          <option className="">M</option>
+          <option className="">L</option>
+          <option className="">XL</option>
         </select>
         {/* Add To Bag Btn */}
         <button className="itemDetail__atbBtn">ADD TO BAG</button>

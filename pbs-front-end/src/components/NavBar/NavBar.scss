@@ -1,11 +1,13 @@
 .navBar {
     height: 40px;
-
+    position: fixed;
+    width: 100%;
+    top: 0;
     &__container{
         padding: 0 40px;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 10px auto;
         max-width: 1800px;
     }
 
@@ -27,4 +29,5 @@
         text-decoration: none;
         color: black;
     }
+
 }

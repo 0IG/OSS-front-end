@@ -1,9 +1,10 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import GearShow from "../gearShow/GearShow";
+import GearShow from "../Items/show/gearShow/GearShow";
 import "./GearIndex.scss";
 import LeftPanel from "../leftPanel/LeftPanel";
+import RightPanel from "../rightPanel/rightPanel";
 
 const GearIndex = ({}) => {
   const [gear, setGear] = useState([]);
@@ -26,6 +27,7 @@ const GearIndex = ({}) => {
           return <GearShow item={item} />;
         })}
       </div>
+      <RightPanel />
     </div>
   );
 };

@@ -1,17 +1,24 @@
 .leftPanel {
       max-height: 300px;
       width: 240px;
-
-   &__allItemsList{
-      padding: 20px;
       font-size: 11px;
-      list-style-type: none;
+      margin-top: 80px;
+      display: inline-block;
+      font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+
+    &__allCatText{
+      font-weight: 500;
+      padding-bottom: 15px;
+   }
+
+   &__allDesiText{
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-weight: 500;
    }
 
    &__designersList{
-      padding: 20px;
       height: 100vh;
       font-size: 11px;
-      list-style-type: none;
    }
 }

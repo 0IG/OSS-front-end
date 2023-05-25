@@ -1,7 +1,11 @@
 import React from "react";
 import "./GearShow.scss";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
+
 function GearShow({ item }) {
+  const { id } = useParams();
+
   return (
     <div className="gearCard">
       <Link to={`/mens/${item.id}`}>

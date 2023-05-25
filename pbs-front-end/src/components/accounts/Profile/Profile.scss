@@ -1,0 +1,37 @@
+.profile{
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+    margin-top: 350px;
+
+    &__form{
+        display: inline-block;
+    }
+    &__title{
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    
+    &__inputTitle{
+        text-align: left;
+        padding-bottom: 6px;
+    }
+    &__inputField{
+        width: 500px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+
+    &__btn{
+        position: absolute;
+        width: 500px;
+        height: 15px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: solid black;
+        margin-top: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}

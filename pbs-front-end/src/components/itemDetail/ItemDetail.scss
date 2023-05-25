@@ -1,38 +1,68 @@
 .itemDetail{
-
+    
+    align-items: center;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 250px 1fr 250px;
-    margin: 60px;
+    grid-template-columns: 1fr 2fr 1fr;
     font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 11px;
+    margin: 0 60px;
+    gap: 10%;
+
+
+    &__itemDesc{
+        max-width: 200px;
+        padding-top: 2px;
+    }
+
+    &__itemInfo{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
 
     &__detail{
         display: list-item;
+        max-width: 200px;
+        max-height: 100px;
     }
     
+    &__color{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__materials{
+        padding-bottom: 15px;
+    }
     &__image{
         
         text-align: center;
 
         img {
-            max-width: 550px;
+            max-width: 100%;
         }
+    }
+
+    &__addToCart{
+        width: 360px;
     }
 
     &__price{
         font-size: 11px;
+        padding-bottom: 8px;
     }
-
     &__select{
-        width: 250px;
-        padding: 8px;
-        font-size: 9px;
+        width: 100%;
+        height: 35px;
+        padding: 3px;
+        font-size: 11px;
         margin-top: 5px;
+        
     }
 
     &__atbBtn {
-        width: 120px;
-        height: 30px;
+        width: 60%;
+        height: 40px;
         font-size: 10px;
         background-color: black;
         color: white;
@@ -42,8 +72,8 @@
     }
 
     &__atwBtn {
-        width: 120px;
-        height: 30px;
+        width: 40%;
+        height: 40px;
         font-size: 10px;
         background: none;
         border: none;

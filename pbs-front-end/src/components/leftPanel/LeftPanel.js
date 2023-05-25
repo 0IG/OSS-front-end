@@ -6,23 +6,33 @@ export default function LeftPanel() {
   //   function listOfDesigners(){}
   return (
     <div className="leftPanel">
+      <div className="leftPanel__allCatText">ALL CATEGORIES</div>
       <div className="leftPanel__categories">
-        <ul className="leftPanel__allItemsList">
-          <li className="leftPanel__item">GI</li>
-          <li className="leftPanel__item">RASHGUARD</li>
-          <li className="leftPanel__item">SHORTS</li>
-          <li className="leftPanel__item">BELTS</li>
-          <li className="leftPanel__item">GLOVES</li>
-        </ul>
+        <div className="leftPanel__allItemsList">
+          <div className="leftPanel__item">GI</div>
+          <div className="leftPanel__item">RASHGUARD</div>
+          <div className="leftPanel__item">SHORTS</div>
+          <div className="leftPanel__item">BELTS</div>
+          <div className="leftPanel__item">GLOVES</div>
+        </div>
       </div>
       <div className="leftPanel__designers">
-        <ul className="leftPanel__designersList">
-          <li className="leftPanel__designer">Origin</li>
-          <li className="leftPanel__designer">Origin</li>
-          <li className="leftPanel__designer">Origin</li>
-          <li className="leftPanel__designer">Origin</li>
-          <li className="leftPanel__designer">Origin</li>
-        </ul>
+        <div className="leftPanel__allDesiText">ALL DESIGNERS</div>
+        <div className="leftPanel__designersList">
+          <div className="leftPanel__designer">Origin</div>
+          <div className="leftPanel__designer">WARTRIBE</div>
+          <div className="leftPanel__designer">RENZO GRACIE</div>
+          <div className="leftPanel__designer">FUJI</div>
+          <div className="leftPanel__designer">RTD</div>
+          <div className="leftPanel__designer">RCVA</div>
+          <div className="leftPanel__designer">FUTURE</div>
+          <div className="leftPanel__designer">BRAUS</div>
+          <div className="leftPanel__designer">CONCA</div>
+          <div className="leftPanel__designer">FUSION</div>
+          <div className="leftPanel__designer">GRACIE STORE</div>
+          <div className="leftPanel__designer">HOOKS</div>
+          <div className="leftPanel__designer">INVERTED GEAR</div>
+        </div>
       </div>
     </div>
   );
