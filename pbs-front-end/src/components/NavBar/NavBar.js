@@ -9,12 +9,12 @@ export default function NavBar() {
       <div className="navBar__container">
         <ul className="navBar__itemList">
           <li className="navBar__item">
-            <Link to="/mens" className="navBar__item">
+            <Link to="/gear?SO=mens" className="navBar__item">
               MENSWEAR
             </Link>
           </li>
           <li className="navBar__item">
-            <Link to="/womens" className="navBar__item">
+            <Link to="/gear?SO=womens" className="navBar__item">
               WOMENSWEAR
             </Link>
           </li>

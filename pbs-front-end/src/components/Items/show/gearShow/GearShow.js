@@ -8,7 +8,7 @@ function GearShow({ item }) {
 
   return (
     <div className="gearCard">
-      <Link to={`/mens/${item.id}`}>
+      <Link to={`/gear/${item.id}`}>
         <div classname="gearCard__imgContainer">
           <img className="gearCard__img" src={item.image} />
         </div>

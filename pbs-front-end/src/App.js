@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navBar/NavBar";
 import LeftPanel from "./components/leftPanel/LeftPanel";
 import RightPanel from "./components/rightPanel/rightPanel";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import GearIndex from "./components/gearIndex/GearIndex";
 import ItemDetail from "./components/itemDetail/ItemDetail";
 import FourOFour from "./components/404/FourOFour";
@@ -22,10 +22,9 @@ export default function App() {
     <div>
       <NavBar />
       <Routes>
-        <Route path="/gear" element={<GearIndex />}></Route>
+        <Route path="/gear" element={<GearIndex key={"Gear index"} />}></Route>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/mens/:productId" element={<ItemDetail />}></Route>
-        <Route path="/womens/:productId" element={<ItemDetail />}></Route>
+        <Route path="/gear/:productId" element={<ItemDetail />}></Route>
         <Route path="/login" element={<Profile />}></Route>
         <Route path="/404" element={<FourOFour />} />
         <Route path="/*" element={<FourOFour />} />
