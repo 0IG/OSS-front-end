@@ -1,0 +1,19 @@
+.rightPanel{
+    max-height: 300px;
+    width: 240px;
+    font-size: 11px;
+    margin-top: 80px;
+    font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+
+    &__sortTitle{
+        padding-bottom: 15px;
+        font-weight: 500;
+    }
+
+    &__colorsTitle{
+        padding-top: 20px;
+        padding-bottom: 15px;
+        font-weight: 500;
+    }
+}

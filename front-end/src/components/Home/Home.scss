@@ -1,0 +1,41 @@
+.home{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .rickson{
+        margin: 80px 40px;
+        font-size: 18px;
+        font-weight: 300;
+        width: fit-content;
+
+        &__type{
+            font-size: 14px;
+            padding-top:5px ;
+            padding-bottom: 8px;
+        }
+
+        &__readMore{
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+
+    .tye{
+        margin: 80px -20px;
+        font-size: 18px;
+        font-weight: 300;
+        width: fit-content;
+
+        &__type{
+            font-size: 14px;
+            padding-top:5px ;
+            padding-bottom: 8px;
+        }
+
+        &__readMore{
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+}

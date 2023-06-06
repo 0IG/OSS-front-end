@@ -1,0 +1,26 @@
+.gearCard {
+    padding-bottom: 30px;
+    font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+
+    &__img {
+        height: 300px;
+        max-width: 100%;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    &__price{
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+

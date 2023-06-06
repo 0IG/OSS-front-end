@@ -1,0 +1,33 @@
+.navBar {
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    &__container{
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        max-width: 1800px;
+    }
+
+    &__img{
+        width: 80px;
+        height: 25px;
+        padding-top: 10px;
+    }
+
+    &__itemList {
+        list-style-type: none;
+        display: flex;
+        gap: 25px;
+        padding: 0;
+        font-size: 11px;
+    }
+
+    &__item{
+        text-decoration: none;
+        color: black;
+    }
+
+}
