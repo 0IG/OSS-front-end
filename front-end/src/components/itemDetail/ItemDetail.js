@@ -3,13 +3,13 @@ import "./ItemDetail.scss";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+const API = process.env.REACT_APP_API_URL;
 export default function ItemDetail() {
   const [info, setInfo] = useState({});
   const { productId } = useParams();
   useEffect(() => {
     axios
-      .get(`http://localhost:9000/gear/${productId}/`)
+      .get(`${API}/gear/${productId}/`)
       .then((response) => {
         setInfo(response.data.payload);
       })

@@ -6,18 +6,18 @@ import "./GearIndex.scss";
 import LeftPanel from "../leftPanel/LeftPanel";
 import RightPanel from "../rightPanel/rightPanel";
 import { useParams, useSearchParams } from "react-router-dom";
-
+let API = process.env.REACT_APP_API_URL;
 const GearIndex = ({ SO }) => {
   const [gear, setGear] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    let API = `http://localhost:9000/gear`;
-    if (searchParams.get("SO")) {
-      API += `?SO=${searchParams.get("SO")}`;
-    }
+    // console.log(API);
+    // if (searchParams.get("SO")) {
+    //   API += `?SO=${searchParams.get("SO")}`;
+    // }
     axios
-      .get(API)
+      .get(`${API}/gear?${searchParams}`)
       .then((response) => {
         setGear(response.data.payload);
       })
@@ -31,7 +31,7 @@ const GearIndex = ({ SO }) => {
       <LeftPanel />
       <div className="gearIndex__container">
         {gear.map((item) => {
-          return <GearShow item={item} />;
+          return <GearShow key={item.id} item={item} />;
         })}
       </div>
       <RightPanel />

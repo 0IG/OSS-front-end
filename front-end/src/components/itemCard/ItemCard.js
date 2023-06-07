@@ -3,10 +3,11 @@ import "./ItemCard.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const API = process.env.REACT_APP_API_URL;
 export const ItemCard = ({ item }) => {
   const [gear, setGear] = useState([]);
   axios
-    .get("/http://localhost:9000/gear/")
+    .get(`${API}/gear/`)
     .then((response) => {
       setGear(response.data.payload);
     })
