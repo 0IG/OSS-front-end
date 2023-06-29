@@ -1,8 +1,27 @@
 .home{
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
+    .introduction{
+        
+        text-align: center;
+
+        &__header{
+            margin-top: 115px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &__listItem{
+            font-size: 14px;
+            font-weight: 200;
+            margin: 20px;
+            }
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .rickson{
         margin: 80px 40px;
         font-size: 18px;

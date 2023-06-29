@@ -1,0 +1,39 @@
+.cart{
+    &__title{
+    padding-top: 120px;
+    margin-left: 350px;
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+&__itemTitle{
+    margin-left: 430px;
+    font-size: 12px;
+    display: inline;
+    font-weight: 200;
+}
+&__totalTitle{
+    font-size: 12px;
+    display: inline;
+    margin: 700px;
+    font-weight: 200;
+}
+&__line{
+    width: 845px;
+    height: 20px;
+    border-bottom: 1px solid black;
+    margin-left: 350px ;
+}
+
+&__itemImg{
+    width: 110px;
+    height: 120px;
+    margin-left: 350px;
+    padding-top: 8px;
+}
+
+&__itemDesigner{
+    margin-left: 500px;
+    display: flex;
+}
+}

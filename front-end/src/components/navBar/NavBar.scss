@@ -12,9 +12,11 @@
     }
 
     &__img{
-        width: 80px;
-        height: 25px;
-        padding-top: 10px;
+        display: flex;
+        width: 90px;
+        height: 40px;
+        padding-top: 0px;
+
     }
 
     &__itemList {

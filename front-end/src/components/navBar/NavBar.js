@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import logo from "../logo.png";
+import oss from "../oss.png";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
@@ -31,7 +32,7 @@ export default function NavBar() {
         </ul>
         <nav className="navBar__logo">
           <Link to="/" className="navBar__img">
-            <img className="navBar__img" src={logo} alt="logo"></img>
+            <img className="navBar__img" src={oss} alt="logo"></img>
           </Link>
         </nav>
         <ul className="navBar__itemList">

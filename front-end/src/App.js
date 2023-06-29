@@ -9,6 +9,8 @@ import GearIndex from "./components/gearIndex/GearIndex";
 import ItemDetail from "./components/itemDetail/ItemDetail";
 import FourOFour from "./components/404/FourOFour";
 import Profile from "./components/accounts/Profile/Profile";
+import WishList from "./components/accounts/wishList/WishList";
+import Cart from "./components/accounts/cart/Cart";
 // Page Imports
 // -
 // Hook Imports
@@ -26,6 +28,8 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/gear/:productId" element={<ItemDetail />}></Route>
         <Route path="/login" element={<Profile />}></Route>
+        {/* <Route path="/wishlist" element={<WishList />}></Route> */}
+        <Route path="/cart" element={<Cart />}></Route>
         <Route path="/404" element={<FourOFour />} />
         <Route path="/*" element={<FourOFour />} />
         {/* We need GearShow to be able to have a custom filter for men/ women and sync to route. */}
