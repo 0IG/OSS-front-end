@@ -4,14 +4,15 @@ For everything BJJ Related!
 
 ## Important Links
 
-- [Deployed API Server]()
-- [Deployed Frontend]()
-- [Trello Board]()
+- [Deployed API Server](https://oss-e3d3.onrender.com)
+- [Deployed Frontend](https://ossense.netlify.app/)
+- [Trello Board](https://trello.com/b/sH59Zz4N/oss)
 - [ERD]()
 - [Wireframes]()
 
 ## OSS
-OSS is an app for anyone and everyone getting into the sport!
+
+OSS is an app for anyone getting into BJJ!
 
 ## Local Setup
 
@@ -33,7 +34,6 @@ PG_HOST=localhost
 PG_PORT=5432
 PG_DATABASE=OSS
 
-
 - npm install - install npm packages listed in package.json
 - npm run db:init - initialize a new database and create tables
 - npm run db:seed - seed the table(s) with some data
@@ -51,8 +51,5 @@ It is recommended that you open a new terminal tab that will be dedicated to run
 
 REACT_APP_API_URL=http://localhost:3333
 
-
 - npm install - install npm packages listed in package.json
 - npm start - make sure your React app can start
-
-

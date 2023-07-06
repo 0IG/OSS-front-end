@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ItemDetail.scss";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { CartContext } from "../accounts/cart/CartContext";
+
 const API = process.env.REACT_APP_API_URL;
 export default function ItemDetail() {
+  const cart = useContext(CartContext);
   const [info, setInfo] = useState({});
   const { productId } = useParams();
   useEffect(() => {
@@ -45,7 +48,14 @@ export default function ItemDetail() {
           <option className="">XL</option>
         </select>
         {/* Add To Bag Btn */}
-        <button className="itemDetail__atbBtn">ADD TO BAG</button>
+        <button
+          className="itemDetail__atbBtn"
+          onClick={() => {
+            cart.addItem(info);
+          }}
+        >
+          ADD TO BAG
+        </button>
         {/* Add To Wishlist Btn */}
         <button className="itemDetail__atwBtn">ADD TO WISHLIST</button>
       </div>

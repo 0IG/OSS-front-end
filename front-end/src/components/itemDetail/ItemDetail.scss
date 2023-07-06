@@ -70,6 +70,7 @@
         font-weight: bold;
         border: solid black;
         margin-top: 8px;
+        cursor: pointer;
     }
 
     &__atwBtn {
@@ -79,5 +80,10 @@
         background: none;
         border: none;
         font-weight: bold;
+        cursor: pointer;
+        ;
     }
 }
+.disabled{
+    pointer-events: none;
+  }

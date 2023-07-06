@@ -11,6 +11,7 @@ import FourOFour from "./components/404/FourOFour";
 import Profile from "./components/accounts/Profile/Profile";
 import WishList from "./components/accounts/wishList/WishList";
 import Cart from "./components/accounts/cart/Cart";
+import { CartProvider } from "./components/accounts/cart/CartContext";
 // Page Imports
 // -
 // Hook Imports
@@ -21,7 +22,7 @@ import React from "react";
 
 export default function App() {
   return (
-    <div>
+    <CartProvider>
       <NavBar />
       <Routes>
         <Route path="/gear" element={<GearIndex key={"Gear index"} />}></Route>
@@ -35,6 +36,6 @@ export default function App() {
         {/* We need GearShow to be able to have a custom filter for men/ women and sync to route. */}
         {/* <Route path="/gear/mens" element={<GearShow />}></Route> */}
       </Routes>
-    </div>
+    </CartProvider>
   );
 }
