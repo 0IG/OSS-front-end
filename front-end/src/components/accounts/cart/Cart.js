@@ -5,6 +5,7 @@ import CartItem from "./CartItem";
 
 export default function Cart() {
   const cart = useContext(CartContext);
+  console.log(cart);
   return (
     <div className="cart">
       <div className="cart__title">SHOPPING BAG</div>
@@ -12,7 +13,7 @@ export default function Cart() {
       <div className="cart__totalTitle">TOTAL</div>
       <div className="cart__line"></div>
       <div>
-        {cart.items[0]
+        {cart?.items.length > 0
           ? cart.items.map((item) => {
               return <CartItem key={item.id} item={item} cart={cart} />;
             })

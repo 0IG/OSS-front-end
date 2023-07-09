@@ -20,7 +20,7 @@ export default function NavBar() {
             </Link>
           </li>
           <li className="navBar__item">
-            <Link to="/misc" className="navBar__item">
+            <Link to="/gear?SO=misc" className="navBar__item">
               MISC
             </Link>
           </li>

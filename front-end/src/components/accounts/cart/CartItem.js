@@ -24,7 +24,7 @@ export default function CartItem({ cart, item }) {
       <button className="cart__itemMoveWL">Move to Wishlist</button>
       <button
         className="cart__itemRemove"
-        onClick={() => cart.deleteItem(item)}
+        onClick={() => cart.removeItem(item)}
       >
         Remove
       </button>

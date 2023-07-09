@@ -1,5 +1,5 @@
 import React from "react";
-import "./rightPanel.scss";
+import "./RightPanel.scss";
 
 export default function rightPanel() {
   return (

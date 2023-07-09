@@ -5,8 +5,8 @@ export const CartContext = createContext({
   items: [],
   getItemQuantity: () => {},
   addItem: () => {},
+  removeItem_old: () => {},
   removeItem: () => {},
-  deleteItem: () => {},
   //   moveItemWL: () => {},
   getTotalCost: () => {},
 });
@@ -56,10 +56,10 @@ export function CartProvider({ children }) {
     }
   }
 
-  function removeItem(id) {
+  function removeItem_old(id) {
     const quantity = getItemQuantity(id);
     if (quantity === 1) {
-      deleteItem(id);
+      removeItem(id);
     } else {
       setCartItems(
         cartItems.map((cartItem) => {
@@ -71,12 +71,11 @@ export function CartProvider({ children }) {
     }
   }
 
-  function deleteItem(id) {
-    setCartItems((cartItems) => {
-      cartItems.filter((curr) => {
-        return curr.id !== id;
-      });
+  function removeItem(item) {
+    const remainingItems = cartItems.filter((curr) => {
+      return curr.id !== item.id;
     });
+    setCartItems(remainingItems);
   }
 
   function getTotalCost() {
@@ -91,8 +90,8 @@ export function CartProvider({ children }) {
     items: cartItems,
     getItemQuantity,
     addItem,
+    removeItem_old,
     removeItem,
-    deleteItem,
     getTotalCost,
   };
   return (

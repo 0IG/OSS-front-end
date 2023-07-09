@@ -3,12 +3,13 @@ import { Route, Routes } from "react-router-dom";
 // Component Imports
 import NavBar from "./components/navBar/NavBar";
 import LeftPanel from "./components/leftPanel/LeftPanel";
-import RightPanel from "./components/rightPanel/rightPanel";
+import RightPanel from "./components/rightPanel/RightPanel";
 import Home from "./components/Home/Home";
 import GearIndex from "./components/gearIndex/GearIndex";
 import ItemDetail from "./components/itemDetail/ItemDetail";
 import FourOFour from "./components/404/FourOFour";
 import Profile from "./components/accounts/Profile/Profile";
+import MiscIndex from "./components/gearIndex/miscIndex/MiscIndex";
 import WishList from "./components/accounts/wishList/WishList";
 import Cart from "./components/accounts/cart/Cart";
 import { CartProvider } from "./components/accounts/cart/CartContext";

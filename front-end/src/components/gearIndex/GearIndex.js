@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import GearShow from "../Items/show/gearShow/GearShow";
 import "./GearIndex.scss";
 import LeftPanel from "../leftPanel/LeftPanel";
-import RightPanel from "../rightPanel/rightPanel";
+import RightPanel from "../rightPanel/RightPanel";
 import { useParams, useSearchParams } from "react-router-dom";
 let API = process.env.REACT_APP_API_URL;
 const GearIndex = ({ SO }) => {
