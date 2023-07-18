@@ -12,14 +12,13 @@ export default function Cart() {
       <div className="cart__itemTitle">ITEM</div>
       <div className="cart__totalTitle">TOTAL</div>
       <div className="cart__line"></div>
-      <div>
+      <div className="cart__itemContainer">
         {cart?.items.length > 0
           ? cart.items.map((item) => {
               return <CartItem key={item.id} item={item} cart={cart} />;
             })
           : ""}
       </div>
-      <div className="cart__line"></div>
       <div className="cart__total"></div>
       <div className="cart__shippingEst"></div>
       <div className="cart__orderTotal"></div>

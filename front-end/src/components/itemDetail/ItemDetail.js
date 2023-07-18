@@ -24,9 +24,10 @@ export default function ItemDetail() {
   return (
     <div className="itemDetail">
       <div className="itemDetail__details">
-        <div className="itemDetail__itemDesigner">{info.name}</div>
+        <div className="itemDetail__itemDesigner">
+          {info.designedby?.toUpperCase()}
+        </div>
         <div className="itemDetail__itemDesc">{info.description}</div>
-        <div className="itemDetail__itemInfo">{info.description}</div>
         <div className="itemDetail__detail">{info.detail1}</div>
         <div className="itemDetail__detail">{info.detail2}</div>
         <div className="itemDetail__color">Supplier color: {info.color}</div>
@@ -36,7 +37,11 @@ export default function ItemDetail() {
         </div>
       </div>
       <div className="itemDetail__image">
-        <img className="itemDetail__img" src={`${info.image}`} alt="image" />
+        <img
+          className="itemDetail__img"
+          src={`${info.image}`}
+          alt="itemImage"
+        />
       </div>
       <div className="itemDetail__addToCart">
         <div className="itemDetail__price">${info.price} USD</div>

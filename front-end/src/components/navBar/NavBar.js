@@ -1,6 +1,4 @@
-// import { Link } from "react-router-dom";
 import "./NavBar.scss";
-import logo from "../logo.png";
 import oss from "../oss.png";
 import { Link } from "react-router-dom";
 
