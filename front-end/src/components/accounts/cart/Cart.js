@@ -19,31 +19,16 @@ export default function Cart() {
             })
           : ""}
       </div>
-      <div className="cart__total"></div>
-      <div className="cart__shippingEst"></div>
-      <div className="cart__orderTotal"></div>
+      <div className="cart__totalLeftPane">
+        <div className="cart__totalText">Total</div>
+        <div className="cart__shippingEstText">Shipping estimate</div>
+        <div className="cart__orderTotalText">Order Total</div>
+      </div>
+      <div className="cart__totalRightPane">
+        <div className="cart__total">${cart.getTotalCost()} USD</div>
+        <div className="cart__shippingEst">Calculated at Checkout</div>
+        <div className="cart__orderTotal">${cart.getTotalCost()} USD</div>
+      </div>
     </div>
   );
-}
-
-{
-  /* 
-  <div className="cart__itemDesigner">War Tribe</div>
-<div className="cart__itemName">Viking Reborn</div>
-<div className="cart__itemSize">
-  SIZE :
-  <select className="cart__select">
-    <option className="cart__itemSize">S</option>
-    <option className="cart__itemSize">M</option>
-    <option className="cart__itemSize">L</option>
-    <option className="cart__itemSize">XL</option>
-  </select>
-</div> 
-
-<div className="cart__itemRemain">Only 1 remaining</div>
-<div className="cart__itemPrice">59.99</div>
-<button className="cart__itemMoveWL">Move to Wishlist</button>
-<button className="cart__itemRemove">Remove</button>
-
-*/
 }

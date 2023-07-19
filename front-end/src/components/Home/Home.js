@@ -49,7 +49,42 @@ export default function Home() {
             <div className="tye__readMore">Read More →</div>
           </div>
         </div>
+        <div className="gordonRyan">
+          <div className="gordonRyan_article">
+            <div className="gordonRyan__img">
+              <img
+                src="https://www.flosports.tv/wp-content/uploads/2023/01/GordonRyanWNOBelt-PCClaytonJones-1280x720-1.png"
+                alt="gordon--ryan"
+              ></img>
+            </div>
+            <div className="gordonRyan__type">Champions</div>
+            <div className="gordonRyan__header">
+              2022 ADDC NoGi World Champ Gordon "The King" Ryan extends help to
+              Marcelo Garcia following troubling news.
+            </div>
+            <div className="gordonRyan__readMore">Read More →</div>
+          </div>
+        </div>
+        <div className="nickyRyan">
+          <div className="nickyRyan_article">
+            <div className="nickyRyan__img">
+              <img
+                src="https://images.tapology.com/letterbox_images/209766/default/Capture.JPG?1549068455"
+                alt="nicky--ryan"
+              ></img>
+            </div>
+            <div className="nickyRyan__type">Champions</div>
+            <div className="nickyRyan__header">
+              Young 66kg Champ Nicky Ryan making a return to competition.
+            </div>
+            <div className="nickyRyan__readMore">Read More →</div>
+          </div>
+        </div>
+        <div className="craigJones"></div>
+        <div className="nickyRod"></div>
       </div>
     </div>
   );
 }
+
+// https://images.tapology.com/letterbox_images/209766/default/Capture.JPG?1549068455
