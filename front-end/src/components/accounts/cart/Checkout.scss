@@ -1,0 +1,34 @@
+.checkout{
+    display: grid;
+    width: fit-content;
+    place-self: start;
+
+    &__loggedAs{
+        font-size: 11px;
+        font-weight: 400;
+        padding-bottom: 8px;
+    }
+    
+    &__userEmail{
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 2px;
+    }
+    
+    &__swapAcc{
+        font-size: 11px;
+        font-weight: 100;
+        padding-bottom: 10px;
+    }
+    
+    &__btn{
+        width: 333px;
+        height: 33px;
+        font-size: 11px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: solid black;
+        cursor: pointer;
+    }
+}

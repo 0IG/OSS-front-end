@@ -27,6 +27,11 @@ export default function NavBar() {
               SALE
             </Link>
           </li>
+          <li className="navBar__item">
+            <Link to="/search" className="navBar__item">
+              SEARCH
+            </Link>
+          </li>
         </ul>
         <nav className="navBar__logo">
           <Link to="/" className="navBar__img">
@@ -34,6 +39,11 @@ export default function NavBar() {
           </Link>
         </nav>
         <ul className="navBar__itemList">
+          <li className="navBar__item">
+            <Link to="/ai" className="navBar__item">
+              AI
+            </Link>
+          </li>
           <li className="navBar__item">
             <Link to="/language" className="navBar__item">
               ENG

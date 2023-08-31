@@ -1,15 +1,44 @@
 .cart{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 180px;
+    // gap: 120px;
     
+&__container{
+    margin-top: 100px;
+}
+
+&__checkout{
+    margin-top: 0px;
+    display: flex;
+    // justify-content:end;
+    align-items: center;
+    // margin-right: 225px;
+}
+
+&__itemContainer {
+    width: fit-content;
+    margin: 0px;
+}
+
+&__titleContainer{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 170px;
+    // text-decoration: underline;
+}
+
 &__title{
-    padding-top: 120px;
-    margin-left: 350px;
-    font-size: 12px;
-    font-weight: 300;
+    // margin-left: 350px;
+    font-size: 11px;
+    font-weight: 400;
     padding-bottom: 8px;
 }
 
 &__itemTitle{
-    margin-left: 430px;
+    // margin-left: 430px;
     font-size: 12px;
     display: inline;
     font-weight: 200;
@@ -18,63 +47,28 @@
 &__totalTitle{
     font-size: 12px;
     display: inline;
-    margin: 700px;
+    // margin: 700px;
     font-weight: 200;
 }
 
 &__line{
-    width: 845px;
+    // width: 845px;
     height: 20px;
-    border-bottom: 1px solid black;
-    margin-left: 350px ;
+    border-bottom: 1px solid rgb(187, 184, 184);
+    // margin-left: 350px ;
 }
 
-&__totalLeftPane{
-    width: 422.5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 468px;
+.checkout{
+    margin-top: 160px;
+    margin-left: 22px;
 }
 
-&__totalRightPane{
-    width: 422.5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 775px;
-    text-align: right;
+.totalPrice {
+    max-width: fit-content;
+    margin-left: 170px;
 }
-&__totalText{
-    font-size: 11px;
-    font-weight: 400;
-    padding-top: 30px;
-}
-
-&__shippingEstText{
-    font-size: 11px;
-    font-weight: 400;
-}
-
-&__orderTotalText{
-    font-size: 11px;
-    font-weight: 600;
-    padding-top: 10px;
-}
-
-&__total{
-    font-size: 11px;
-    font-weight: 400;
-    padding-top: 30px;
-}
-
-&__shippingEst{
-    font-size: 11px;
-    font-weight: 400;
-}
-
-&__orderTotal{
-    font-size: 11px;
-    font-weight: 600;
-    padding-top: 10px;
+span{
+    text-decoration: underline;
 }
 
 }

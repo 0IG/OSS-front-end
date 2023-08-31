@@ -3,6 +3,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+
     &__container{
         padding: 0 40px;
         display: flex;
@@ -16,6 +17,7 @@
         width: 90px;
         height: 40px;
         padding-top: 0px;
+        justify-content: center;
     }
 
     &__itemList {

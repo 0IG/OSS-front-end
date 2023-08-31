@@ -12,11 +12,16 @@ function GearShow({ item }) {
         <div className="gearCard__imgContainer">
           <img className="gearCard__img" src={item.image} />
         </div>
+        <div className="gearCard__designerContainer">
+          <div className="gearCard__itemDesigner">
+            {item.designed_by?.toUpperCase()}
+          </div>
+        </div>
         <div className="gearCard__titleContainer">
-          <h2 className="gearCard__title">{item.name}</h2>
+          <div className="gearCard__title">{item.name}</div>
         </div>
         <div className="gearCard__priceContainer">
-          <h3 className="gearCard__price">${item.price}</h3>
+          <div className="gearCard__price">${item.price}</div>
         </div>
       </Link>
     </div>

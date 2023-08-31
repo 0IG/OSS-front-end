@@ -1,0 +1,43 @@
+.ddb{
+    font-size: 40px;
+    width: fit-content;
+
+    &__inputContainer{
+        text-align: center;
+        padding-top: 80px;
+    }
+    &__input{
+        font-size: 11px;
+        width: 600px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 0;
+    }
+
+    &__videoContainer{
+        display: grid;
+        width: 555px;
+        height: 333px;
+        border: 1px solid black;
+        border-radius: 0;
+        
+    }
+
+    &__video{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    &__transitionContainer{
+        display: grid;
+        font-size: 18px;
+        // border: 1px solid black;
+        width: fit-content;
+        font-weight: 300;
+    }
+
+    &__transition{
+        border: 1px solid black;
+    }
+
+}

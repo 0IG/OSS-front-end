@@ -40,7 +40,7 @@ export function CartProvider({ children }) {
           name: item.name,
           price: item.price,
           image: item.image,
-          designer: item.designedBy,
+          designer: item.designed_by,
           quantity: 1,
         },
       ]);

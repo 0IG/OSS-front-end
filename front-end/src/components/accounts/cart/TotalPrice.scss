@@ -1,0 +1,53 @@
+.totalPrice {
+    
+    display: inline-flex;
+    justify-content: space-around;
+
+    &__totalLeftPane{
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    // padding-left: 468px;
+}
+
+    &__totalRightPane{
+    // width: 422.5px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: right;
+    padding-left: 212px;
+}
+    &__totalText{
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+    &__shippingEstText{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+    &__orderTotalText{
+    font-size: 11px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+    &__total{
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+    &__shippingEst{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+    &__orderTotal{
+    font-size: 11px;
+    font-weight: 600;
+    padding-top: 10px;
+    }
+}

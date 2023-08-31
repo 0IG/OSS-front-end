@@ -25,7 +25,7 @@ export default function ItemDetail() {
     <div className="itemDetail">
       <div className="itemDetail__details">
         <div className="itemDetail__itemDesigner">
-          {info.designedby?.toUpperCase()}
+          {info.designed_by?.toUpperCase()}
         </div>
         <div className="itemDetail__itemDesc">{info.description}</div>
         <div className="itemDetail__detail">{info.detail1}</div>

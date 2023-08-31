@@ -1,7 +1,8 @@
 .leftPanel {
+      padding-left: 15px;
       max-height: 300px;
       width: 240px;
-      font-size: 11px;
+      font-size: 12px;
       margin-top: 80px;
       display: inline-block;
       font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -20,5 +21,9 @@
    &__designersList{
       height: 100vh;
       font-size: 11px;
+   }
+
+   &__designer{
+      padding-bottom: 3px;
    }
 }
