@@ -9,6 +9,7 @@ const API = process.env.REACT_APP_API_URL;
 export default function ItemDetail() {
   const cart = useContext(CartContext);
   const [info, setInfo] = useState({});
+
   const { productId } = useParams();
   useEffect(() => {
     axios

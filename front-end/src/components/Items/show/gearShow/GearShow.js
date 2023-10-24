@@ -5,7 +5,6 @@ import { useState } from "react";
 
 function GearShow({ item }) {
   const { id } = useParams();
-
   return (
     <div className="gearCard">
       <Link to={`/gear/${item.id}`}>

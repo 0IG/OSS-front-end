@@ -10,12 +10,33 @@ let API = process.env.REACT_APP_API_URL;
 const GearIndex = ({ SO }) => {
   const [gear, setGear] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
+  const [showGear, setShowGear] = useState(false);
+  const [gearLoading, setGearLoading] = useState(false);
+  const [deleteUserLoading, setDeleteUserLoading] = useState(false);
+
+  // const fetchAndShowGear = (e) => {
+  //   e.stopPropagation();
+  //   e.preventDefualt();
+
+  //   if (gear.length > 0) {
+  //     setShowGear(true);
+  //   } else {
+  //     setGearLoading(true);
+
+  //     const url =
+  //       "https://cdn.dribbble.com/users/172906/screenshots/1185018/2013-08-04_21_14_41.gif";
+
+  //     fetch(url)
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         setGear(data);
+  //         setShowGear(true);
+  //         setGearLoading(false);
+  //       });
+  //   }
+  // };
 
   useEffect(() => {
-    // console.log(API);
-    // if (searchParams.get("SO")) {
-    //   API += `?SO=${searchParams.get("SO")}`;
-    // }
     axios
       .get(`${API}/gear?${searchParams}`)
       .then((response) => {

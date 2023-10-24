@@ -2,8 +2,6 @@ import React from "react";
 import "./LeftPanel.scss";
 import { useState, useEffect } from "react";
 export default function LeftPanel() {
-  //   function giveAlphabetizedVendors() {}
-  //   function listOfDesigners(){}
   return (
     <div className="leftPanel">
       <div className="leftPanel__allCatText">ALL CATEGORIES</div>

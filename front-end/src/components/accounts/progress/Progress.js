@@ -5,6 +5,11 @@ export default function Progress() {
   return (
     <div className="progress">
       <div className="progress__title">Progress</div>
+      <div className="progress__circle">
+        <div className="progress__circleSlice1"></div>
+        <div className="progress__circleSlice2"></div>
+        <div className="progress__circleSlice3"></div>
+      </div>
       <div className="progress__questions">
         <div className="progress__question">
           How often do you train.
