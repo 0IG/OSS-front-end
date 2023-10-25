@@ -1,5 +1,6 @@
 // Library Imports
 import { Route, Routes } from "react-router-dom";
+import React from "react";
 // Component Imports
 import NavBar from "./components/navBar/NavBar";
 import OpenAi from "./components/openAi/OpenAi";
@@ -11,13 +12,13 @@ import Profile from "./components/accounts/profile/Profile";
 import Cart from "./components/accounts/cart/Cart";
 import ProgressTracker from "./components/accounts/progress/Progress";
 import { CartProvider } from "./components/accounts/cart/CartContext";
+import EmptyView from "./components/emptyView/EmptyView";
 // Page Imports
 // -
 // Hook Imports
 //-
 //Styling Imports
 // -
-import React from "react";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/404" element={<FourOFour />} />
         <Route path="/*" element={<FourOFour />} />
+        <Route path="/testing" element={<EmptyView />} />
       </Routes>
     </CartProvider>
   );

@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Checkout.scss";
+import EmptyView from "../../emptyView/EmptyView";
+import axios from "axios";
+
 export default function checkout() {
   return (
     <div className="checkout">

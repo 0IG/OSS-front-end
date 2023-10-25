@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
 import GearShow from "../Items/show/gearShow/GearShow";
+import { useParams, useSearchParams } from "react-router-dom";
+// Styles
 import "./GearIndex.scss";
+// Components
 import LeftPanel from "../leftPanel/LeftPanel";
 import RightPanel from "../rightPanel/RightPanel";
-import { useParams, useSearchParams } from "react-router-dom";
 import Loader from "../loader/Loader";
-let API = process.env.REACT_APP_API_URL;
 
 const GearIndex = ({ SO }) => {
   const [gear, setGear] = useState([]);
@@ -15,6 +15,8 @@ const GearIndex = ({ SO }) => {
   const [gearLoading, setGearLoading] = useState(false);
   const [showGear, setGearShow] = useState(true);
   const [deleteUserLoading, setDeleteUserLoading] = useState(false);
+
+  let API = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     setGearLoading(true);
