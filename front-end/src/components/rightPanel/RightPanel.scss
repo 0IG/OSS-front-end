@@ -11,6 +11,10 @@
         font-weight: 500;
     }
 
+    &__sort >*{
+        padding-bottom: 3px;
+    }
+
     &__colorsTitle{
         padding-top: 20px;
         padding-bottom: 15px;
@@ -20,4 +24,9 @@
     &__colors{
         margin-bottom: 30px;
     }
+
+&__colors >*{
+
+padding-bottom: 3px;
+}
 }
