@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./LeftPanel.scss";
-import { useState, useEffect } from "react";
 export default function LeftPanel() {
+  let API = process.env.REACT_APP_API_URL;
+
+  // useEffect(() => {
+  //   axios
+  //     .get(`${API}/gear?${searchParams}`)
+  //     .then((response) => {
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, [searchParams]);
+
   return (
     <div className="leftPanel">
       <div className="leftPanel__allCatText">ALL CATEGORIES</div>

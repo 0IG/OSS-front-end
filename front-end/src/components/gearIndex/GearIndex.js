@@ -37,10 +37,7 @@ const GearIndex = ({ SO }) => {
     return (
       <div className="gearIndex">
         <LeftPanel />
-        <div
-          className="gearIndex__container"
-          style={{ display: showGear ? "grid" : "none" }}
-        >
+        <div className="gearIndex__container">
           {gear.map((item) => {
             return <GearShow key={item.id} item={item} />;
           })}
