@@ -1,10 +1,16 @@
 import "./NavBar.scss";
 import oss from "../oss.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function NavBar() {
   return (
     <div className="navBar">
+      <div className="navBar__hamburgerMenu">
+        <div className="navBar__hamburgerMenuLine"></div>
+        <div className="navBar__hamburgerMenuLineCenter"></div>
+        <div className="navBar__hamburgerMenuLine"></div>
+      </div>
       <div className="navBar__container">
         <ul className="navBar__itemList">
           <li className="navBar__item">
