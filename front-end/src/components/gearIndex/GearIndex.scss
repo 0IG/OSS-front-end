@@ -2,13 +2,13 @@
     margin: 60px 19px;
     display: flex;
 
+
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
         width: max-content;
         flex-grow:1;
-        flex-shrink: 4;
+        flex-shrink: 1000;
     } 
 
 }

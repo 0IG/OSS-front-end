@@ -1,10 +1,12 @@
 .RightPanel{
+    display: flex;
+    flex-direction: column;
     max-height: 300px;
-    width: 240px;
+    min-width: 240px;
     font-size: 11px;
     margin-top: 80px;
     font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
-    align-content: end;
+    padding-right: 25px;
 
     &__sortTitle{
         padding-bottom: 15px;
