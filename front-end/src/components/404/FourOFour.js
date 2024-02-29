@@ -7,7 +7,7 @@ export default function FourOFour() {
       <div className="FourOFour__404">404</div>
       <div className="FourOFour__text">This web page could not be found.</div>
       <div className="FourOFour__img">
-        <img src="https://i.gifer.com/Z3zH.gif"></img>
+        <img src="https://media.tenor.com/OGH7rOXh5YIAAAAi/solid-snake-mgs.gif"></img>
       </div>
     </div>
   );

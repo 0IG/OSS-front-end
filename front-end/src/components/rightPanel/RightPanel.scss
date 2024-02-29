@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     max-height: 300px;
-    min-width: 240px;
+    width: 15%;
     font-size: 11px;
     margin-top: 80px;
     font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
     padding-right: 25px;
+    list-style: none;
 
     &__sortTitle{
         padding-bottom: 15px;
@@ -31,4 +32,11 @@
 
 padding-bottom: 3px;
 }
+}
+
+/* ----------- Mobile ----------- */
+@media only screen and (max-width: 600px) {
+    .RightPanel{
+        display: none;
+    }
 }

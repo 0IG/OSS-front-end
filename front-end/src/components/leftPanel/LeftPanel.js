@@ -1,46 +1,57 @@
 import React, { useState, useEffect } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
+import CategoryItem from "../categoryItem/CategoryItem";
 import "./LeftPanel.scss";
-export default function LeftPanel() {
-  let API = process.env.REACT_APP_API_URL;
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`${API}/gear?${searchParams}`)
-  //     .then((response) => {
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, [searchParams]);
+export default function LeftPanel() {
+  let location = useLocation();
+  let categoryNames = ["GI", "RASHGUARD", "SHORTS", "BELTS", "GLOVES"];
+  let designerNames = [
+    "Origin",
+    "WARTRIBE",
+    "RENZO GRACIE",
+    "FUJI",
+    "RTD",
+    "FUTURE",
+    "BRAUS",
+    "FUSION",
+    "CONCA",
+    "RVCA",
+    "HOOKS",
+    "INVERTED GEAR",
+    "GRACIE STORE",
+  ];
+  let urlParams = new URLSearchParams(location.search);
+  let [searchParms, setSearchParms] = useSearchParams();
 
   return (
     <div className="leftPanel">
       <div className="leftPanel__allCatText">ALL CATEGORIES</div>
       <div className="leftPanel__categories">
         <div className="leftPanel__allItemsList">
-          <div className="leftPanel__item">GI</div>
-          <div className="leftPanel__item">RASHGUARD</div>
-          <div className="leftPanel__item">SHORTS</div>
-          <div className="leftPanel__item">BELTS</div>
-          <div className="leftPanel__item">GLOVES</div>
+          {categoryNames.map((item, curr) => {
+            return (
+              <CategoryItem
+                urlParams={urlParams}
+                item={item}
+                location={location}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="leftPanel__designers">
         <div className="leftPanel__allDesiText">ALL DESIGNERS</div>
         <div className="leftPanel__designersList">
-          <div className="leftPanel__designer">Origin</div>
-          <div className="leftPanel__designer">WARTRIBE</div>
-          <div className="leftPanel__designer">RENZO GRACIE</div>
-          <div className="leftPanel__designer">FUJI</div>
-          <div className="leftPanel__designer">RTD</div>
-          <div className="leftPanel__designer">RCVA</div>
-          <div className="leftPanel__designer">FUTURE</div>
-          <div className="leftPanel__designer">BRAUS</div>
-          <div className="leftPanel__designer">CONCA</div>
-          <div className="leftPanel__designer">FUSION</div>
-          <div className="leftPanel__designer">GRACIE STORE</div>
-          <div className="leftPanel__designer">HOOKS</div>
-          <div className="leftPanel__designer">INVERTED GEAR</div>
+          {designerNames.map((item, curr) => {
+            return (
+              <CategoryItem
+                urlParams={urlParams}
+                item={item}
+                location={location}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

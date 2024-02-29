@@ -3,10 +3,11 @@
       flex-direction: column;
       padding-left: 25px;
       max-height: 300px;
-      width: 240px;
+      width: 15%;
       font-size: 11px;
       margin-top: 80px;
       font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+      list-style: none;
 
     &__allCatText{
       font-weight: 500;
@@ -26,5 +27,12 @@
 
    &__designer{
       padding-bottom: 3px;
+   }
+}
+
+/* ----------- Mobile ----------- */
+@media only screen and (max-width: 600px) {
+   .leftPanel{
+      display: none;
    }
 }

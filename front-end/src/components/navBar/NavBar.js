@@ -11,6 +11,7 @@ export default function NavBar() {
         <div className="navBar__hamburgerMenuLineCenter"></div>
         <div className="navBar__hamburgerMenuLine"></div>
       </div>
+
       <div className="navBar__container">
         <ul className="navBar__itemList">
           <li className="navBar__item">

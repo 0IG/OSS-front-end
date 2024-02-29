@@ -6,9 +6,47 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        width: max-content;
-        flex-grow:1;
+        width: 70%;
         flex-shrink: 1000;
     } 
 
+}
+/* ----------- Mobile ----------- */
+@media only screen and (max-width: 600px) {
+  .gearIndex{
+    margin: 0 auto;
+  }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .gearIndex{
+        display: flex;
+        margin-top: 60px;
+        margin-right:  -20px;
+        // width: calc(100%);
+    }
+}
+
+/* ----------- (1920x1080) Full HD Display  ----------- */
+@media  screen and (max-width: 1920px) {
+
+  .gearIndex{
+    
+    &__container{
+      display: flex;
+      // flex: 1 0 21%; 
+    }
+  }
 }
