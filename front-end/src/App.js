@@ -12,6 +12,9 @@ import Profile from "./components/accounts/profile/Profile";
 import Cart from "./components/accounts/cart/Cart";
 import ProgressTracker from "./components/accounts/progress/Progress";
 import { CartProvider } from "./components/accounts/cart/CartContext";
+import SignIn from "./components/accounts/profile/SignIn";
+import SignUp from "./components/accounts/profile/SignUp";
+import AuthDetails from "./components/accounts/profile/AuthDetails";
 import EmptyView from "./components/emptyView/EmptyView";
 // Page Imports
 // -
@@ -26,6 +29,9 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path="/gear" element={<GearIndex key={"Gear index"} />}></Route>
+        <Route path="/SignIn" element={<SignIn />}></Route>
+        <Route path="/SignUo" element={<SignUp />}></Route>
+        <Route path="/auth" element={<AuthDetails />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/ai" element={<OpenAi />}></Route>
         <Route path="/PT" element={<ProgressTracker />}></Route>

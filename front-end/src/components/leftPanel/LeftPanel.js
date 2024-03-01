@@ -5,10 +5,12 @@ import "./LeftPanel.scss";
 
 export default function LeftPanel() {
   let location = useLocation();
+  let urlParams = new URLSearchParams(location.search);
+  let [searchParms, setSearchParms] = useSearchParams();
   let categoryNames = ["GI", "RASHGUARD", "SHORTS", "BELTS", "GLOVES"];
   let designerNames = [
     "Origin",
-    "WARTRIBE",
+    "WAR TRIBE",
     "RENZO GRACIE",
     "FUJI",
     "RTD",
@@ -21,8 +23,6 @@ export default function LeftPanel() {
     "INVERTED GEAR",
     "GRACIE STORE",
   ];
-  let urlParams = new URLSearchParams(location.search);
-  let [searchParms, setSearchParms] = useSearchParams();
 
   return (
     <div className="leftPanel">
@@ -35,6 +35,7 @@ export default function LeftPanel() {
                 urlParams={urlParams}
                 item={item}
                 location={location}
+                type="category"
               />
             );
           })}
@@ -49,6 +50,7 @@ export default function LeftPanel() {
                 urlParams={urlParams}
                 item={item}
                 location={location}
+                type="designer"
               />
             );
           })}
