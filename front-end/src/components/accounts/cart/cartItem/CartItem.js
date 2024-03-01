@@ -8,7 +8,9 @@ export default function CartItem({ cart, item }) {
         <img className="cartItem__img" src={item.image} alt="itemImage"></img>
       </div>
       <div className="cartItem__textLeftContainer">
-        <div className="cartItem__itemDesigner">{item.designer}</div>
+        <div className="cartItem__itemDesigner">
+          {item.designer.toUpperCase()}
+        </div>
         <div className="cartItem__itemDesigner">{item.name}</div>
         <div className="cartItem__itemSize">
           SIZE :
