@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Cart.scss";
-import { CartContext } from "./CartContext";
-import CartItem from "./CartItem";
-import Checkout from "./Checkout";
-import TotalPrice from "./TotalPrice";
+import { CartContext } from "./cartContext/CartContext";
+import CartItem from "./cartItem/CartItem";
+import Checkout from "./checkout/Checkout";
+import TotalPrice from "./totalPrice/TotalPrice";
 
 export default function Cart() {
   const cart = useContext(CartContext);

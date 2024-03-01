@@ -1,7 +1,9 @@
-import React from "react";
+import { useContext } from "react";
 import "./Home.scss";
-
+// import { FirebaseAuthContext } from "../accounts/firebaseAuthProvider/FirebaseAuthProvider";
 export default function Home() {
+  // let firebaseAuth = useContext(FirebaseAuthContext);
+  // console.log(firebaseAuth);
   return (
     <div className="home">
       <div className="introduction">

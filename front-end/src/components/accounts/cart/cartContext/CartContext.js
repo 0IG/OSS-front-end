@@ -17,7 +17,6 @@ export function CartProvider({ children }) {
       ? JSON.parse(localStorage.getItem("itemsInCart"))
       : []
   );
-  // const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("itemsInCart", JSON.stringify(cartItems));

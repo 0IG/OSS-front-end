@@ -1,7 +1,12 @@
 import React from "react";
+import AuthDetails from "../../auth/AuthDetails";
 import "./Profile.scss";
+import { auth } from "../../firebaseConfig/FireBaseConfig";
 
 export default function Profile() {
+  const checkUser = () => {
+    const user = AuthDetails(auth);
+  };
   return (
     <div className="profile">
       <div className="profile__form">
