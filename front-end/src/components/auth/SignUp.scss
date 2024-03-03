@@ -1,0 +1,78 @@
+.signUp{
+    position: relative;
+    top:100px;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction:column;
+    }
+
+    &__createTitle{
+        font-size: 11px;
+        opacity: 80%;
+        font-weight:500;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    &__inputEmailTitle{
+        font-size: 11px;
+        opacity: 88%;
+        font-weight:400;
+        text-align: left;
+    }
+
+    &__inputEmail{
+        width: 420px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    &__inputPasswordTitle{
+        font-size: 11px;
+        opacity: 88%;
+        font-weight:400;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    &__inputPassword{
+        width: 420px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+
+    &__btnCreate{
+        width: 425px;
+        background-color: black;
+        color: white;
+        border: solid black;
+        margin-top: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 11px;
+    }
+
+    &__btnBack{
+        width: 425px;
+        background-color: white;
+        color: black;
+        opacity: 80%;
+        border: solid white;
+        margin-top: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 11px;
+    }
+
+}
