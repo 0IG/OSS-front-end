@@ -1,21 +1,32 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebaseConfig/FireBaseConfig";
+import { useNavigate } from "react-router-dom";
 import "./SignIn.scss";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        console.log(userCredential);
+        if (userCredential._tokenResponse.registered === true) navigate(`/`);
+        console.log("UserCreds", userCredential);
       })
       .catch((error) => {
+        navigate("/signup");
+        alert("User not found, please create an account");
         console.log(error);
       });
+  };
+
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    if (e.target.innerText === "Create Account") navigate(`/signup`);
+    else navigate(`/`);
   };
 
   return (
@@ -41,6 +52,9 @@ const SignIn = () => {
           <button type="submit" className="signIn__btn">
             CONTINUE
           </button>
+          <div className="signIn__createAccRedirect" onClick={handleRedirect}>
+            Create Account
+          </div>
         </form>
       </div>
     </div>

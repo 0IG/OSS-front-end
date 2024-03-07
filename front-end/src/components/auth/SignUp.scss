@@ -29,6 +29,7 @@
     }
 
     &__inputEmail{
+        outline: none;
         width: 420px;
         height: 25px;
         border: 1px solid black;
@@ -50,6 +51,7 @@
         border: 1px solid black;
         border-radius: 0;
         margin-bottom: 10px;
+        outline: none;
     }
 
     &__btnCreate{

@@ -32,6 +32,7 @@
         border: 1px solid black;
         border-radius: 0;
         margin-bottom: 10px;
+        outline: none;
     }
 
     &__inputPasswordTitle{
@@ -48,6 +49,7 @@
         border: 1px solid black;
         border-radius: 0;
         margin-bottom: 10px;
+        outline: none;
     }
 
     &__btn{
@@ -59,6 +61,14 @@
         padding-top: 9px;
         padding-bottom: 9px;
         font-size: 11px;
+    }
+
+    &__createAccRedirect{
+        font-size: 10px;
+        opacity: 80%;
+        font-weight:500;
+        text-align: left;
+        padding-top: 10px;
     }
 
 }

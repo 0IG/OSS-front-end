@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebaseConfig/FireBaseConfig";
+import { useNavigate } from "react-router-dom";
 import "./SignUp.scss";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const signUp = (e) => {
     e.preventDefault();
@@ -40,7 +42,11 @@ const SignUp = () => {
           <button type="submit" className="signUp__btnCreate">
             CREATE AN ACCOUNT
           </button>
-          <button type="submit" className="signUp__btnBack">
+          <button
+            type="submit"
+            className="signUp__btnBack"
+            onClick={() => navigate(-1)}
+          >
             BACK
           </button>
         </form>
