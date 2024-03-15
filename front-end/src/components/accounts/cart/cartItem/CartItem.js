@@ -2,7 +2,6 @@ import React from "react";
 import "./CartItem.scss";
 export default function CartItem({ cart, item }) {
   return (
-    // <div>
     <div className="cartItem">
       <div className="cartItem__imgContainer">
         <img className="cartItem__img" src={item.image} alt="itemImage"></img>
@@ -14,15 +13,23 @@ export default function CartItem({ cart, item }) {
         <div className="cartItem__itemDesigner">{item.name}</div>
         <div className="cartItem__itemSize">
           SIZE :
-          <select className="cartItem__select">
-            <option className="cartItem__itemSize">S</option>
-            <option className="cartItem__itemSize">M</option>
-            <option className="cartItem__itemSize">L</option>
-            <option className="cartItem__itemSize">XL</option>
+          <select className="cartItem__select" defaultValue={item.size}>
+            <option className="cartItem__itemSize" value="s">
+              S
+            </option>
+            <option className="cartItem__itemSize" value="m">
+              M
+            </option>
+            <option className="cartItem__itemSize" value="l">
+              L
+            </option>
+            <option className="cartItem__itemSize" value="xl">
+              XL
+            </option>
           </select>
         </div>
-
-        <div className="cartItem__itemRemain">Only 1 remaining</div>
+        <div className="cartItem__itemRemain">{`Only 1 remaining`}</div>{" "}
+        {/*  ^ Requires schema/seed to keep track of how many exisist in stock */}
         <div className="cartItem__space"></div>
         <button className="cartItem__itemMoveWL">Move to Wishlist</button>
       </div>
@@ -37,6 +44,5 @@ export default function CartItem({ cart, item }) {
         </button>
       </div>
     </div>
-    // </div>
   );
 }

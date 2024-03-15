@@ -4,9 +4,13 @@ import { CartContext } from "./cartContext/CartContext";
 import CartItem from "./cartItem/CartItem";
 import Checkout from "./checkout/Checkout";
 import TotalPrice from "./totalPrice/TotalPrice";
+import EmptyCart from "../../emptyView/EmptyCart";
 
 export default function Cart() {
   const cart = useContext(CartContext);
+  if (cart.items.length === 0) {
+    return <EmptyCart />;
+  }
   return (
     <div className="cart">
       <div className="cart__main">

@@ -1,9 +1,17 @@
 import "./NavBar.scss";
 import oss from "../oss.png";
+import React, { useContext, useState } from "react";
+import SearchBar from "../searchBar/SearchBar";
+import { FirebaseAuthContext } from "../accounts/firebaseAuthProvider/FirebaseAuthProvider";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function NavBar() {
+  let authenticatedUser = useContext(FirebaseAuthContext);
+  const [showSearchBar, setShowSearchBar] = useState(false);
+  const handleSearchClick = () => {
+    setShowSearchBar(!showSearchBar);
+  };
+
   return (
     <div className="navBar">
       <div className="navBar__hamburgerMenu">
@@ -35,11 +43,12 @@ export default function NavBar() {
             </Link>
           </li>
           <li className="navBar__item">
-            <Link to="/search" className="navBar__item">
+            <button className="navBar__btn" onClick={handleSearchClick}>
               SEARCH
-            </Link>
+            </button>
           </li>
         </ul>
+        {showSearchBar && <SearchBar />}
         <nav className="navBar__logo">
           <Link to="/" className="navBar__img">
             <img className="navBar__img" src={oss} alt="logo"></img>
@@ -57,9 +66,15 @@ export default function NavBar() {
             </Link>
           </li>
           <li className="navBar__item">
-            <Link to="/login" className="navBar__item">
-              LOGIN
-            </Link>
+            {authenticatedUser.currentUser ? (
+              <Link to="/auth" className="navBar__item">
+                ACCOUNT
+              </Link>
+            ) : (
+              <Link to="/signin" className="navBar__item">
+                LOGIN
+              </Link>
+            )}
           </li>
           <li className="navBar__item">
             <Link to="/wishlist" className="navBar__item">

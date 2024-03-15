@@ -1,0 +1,45 @@
+.address{
+    display: flex;
+    font-size: 11px;
+    flex-direction: column;
+    align-items: left;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__checkoutTitle{
+        font-size: 11px;
+        padding-bottom: 30px;
+    }
+    &__shipAddressAdd{
+        background: transparent;
+        font-size: 11px;
+        border: none;
+        color: black;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    // &__shipDetails{
+    // }
+
+    &__shipDetailsItem{
+        list-style-type: none;
+        padding-bottom: 3px;
+    }
+
+    &__billingCheckbox{
+        appearance: none;
+        background-color: #fff;
+        // margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 1.15em;
+        height: 1.15em;
+        border: 0.15em solid currentColor;
+        border-radius: 0em;
+        // transform: translateY(-0.075em);
+    }
+}

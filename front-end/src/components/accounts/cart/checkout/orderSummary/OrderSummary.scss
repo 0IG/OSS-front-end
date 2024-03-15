@@ -1,0 +1,15 @@
+.orderSummary{
+    display: flex;
+    margin-top: 300px;
+    margin-left: 200px;
+
+    &__title{
+        font-size: 0.85em;
+        border-bottom: 1px solid #e0e0e0;
+        width: 25em;
+        font-weight: 400;
+    }
+
+    &__item{}
+
+}

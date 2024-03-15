@@ -39,6 +39,7 @@ export function CartProvider({ children }) {
           name: item.name,
           price: item.price,
           image: item.image,
+          size: item.size,
           designer: item.designed_by,
           quantity: 1,
         },

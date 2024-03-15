@@ -1,0 +1,75 @@
+.searchBar{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 11px;
+    background-color: white;
+
+    &__container{
+        overflow: hidden;
+        position: relative;
+        width: 450px;
+        justify-content: space-between;
+        border: 1px solid rgb(148, 148, 148);
+        height: 140px;
+    }
+
+    &__categories{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 5px;
+    }
+
+    &__option{
+        margin: 0 15px;
+    }
+    &__option:hover{
+        text-decoration: underline;
+    }
+
+    &__midSearch{
+        display:flex;
+    }
+
+    &__input{
+        display: flex;
+        outline: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        font-size: 10px;
+        width: 333px;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px solid black;
+    }
+
+    &__inputBtn{
+        border: none;
+        background:none;
+        font-size: 11px;
+        padding-top: 15px;
+        padding-left: 10px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    &__checkboxToggle{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    &__checkboxLabel{
+        padding-top: 3px;
+    }
+
+    &__saleToggle{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+
+}

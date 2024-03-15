@@ -5,7 +5,7 @@
     top: 0;
 
     &__container{
-        padding: 0 40px;
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
         margin: 10px auto;
@@ -13,24 +13,33 @@
     }
 
     &__img{
-        display: flex;
         width: 90px;
         height: 40px;
         padding-top: 0px;
-        justify-content: center;
     }
 
     &__itemList {
         list-style-type: none;
         display: flex;
         gap: 25px;
-        padding: 0;
         font-size: 11px;
     }
 
     &__item{
         text-decoration: none;
         color: black;
+        :hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__btn{
+        background: none;
+        border: none;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 0;
     }
 }
 

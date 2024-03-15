@@ -1,0 +1,61 @@
+.accountDetails{
+    margin-top: 141px;
+    
+    &__form{
+        display:flex;
+        flex-direction: column;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    &__detailsTitle{
+        text-align: center;
+        font-stretch: 100;
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 13px;
+        height: 0;
+        padding-bottom: 10px;
+    }
+
+    &__editPrompt{
+        font-size: 11px;
+        font-weight: 400;
+        opacity: 85%;
+        height: 0;
+    }
+    
+    &__label{
+        font-size: 11px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        opacity: 80%;
+    }
+
+    &__input{
+        width:450px;
+        height:25px;
+        border: 1px solid black;
+        outline: none;
+        margin-top:5px ;
+        margin-bottom: 10px;
+    }
+
+    &__btn{
+        width: 222px;
+        height: 33px;
+        font-size: 11px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border: solid black;
+        margin: 0 auto;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

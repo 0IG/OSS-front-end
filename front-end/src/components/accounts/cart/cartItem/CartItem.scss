@@ -51,13 +51,16 @@
         display: flex;
         border: none;
         font-size: 11px;
+        outline:none ;
         cursor: pointer;
     }
     
     &__itemRemain{
         display: flex;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 300;
+        padding-top: 5px;
+        opacity: 70%;
     }
 
     &__textRightContainer{

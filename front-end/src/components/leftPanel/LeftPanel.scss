@@ -5,9 +5,10 @@
       max-height: 300px;
       width: 15%;
       font-size: 11px;
-      margin-top: 80px;
+      margin-top: 40px;
       font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
       list-style: none;
+      
 
     &__allCatText{
       font-weight: 500;
@@ -18,15 +19,14 @@
       padding-top: 20px;
       padding-bottom: 15px;
       font-weight: 500;
+      
    }
-
+   &__allItemsList{
+      font-size: 11px;
+   }
    &__designersList{
       height: 100vh;
       font-size: 11px;
-   }
-
-   &__designer{
-      padding-bottom: 3px;
    }
 }
 

@@ -1,0 +1,33 @@
+.securePay{
+
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    &__topContent{
+        border: 1px solid black;
+        width: fit-content;
+        padding-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__botContent{
+        border: 1px solid black;
+        width: fit-content;
+    }
+
+}
+
+.securePay__longInput{
+    padding: 8px;
+    width: 20em;
+    margin-right: 25px;
+}
+.securePay__shortInput{
+    padding: 8px;
+}

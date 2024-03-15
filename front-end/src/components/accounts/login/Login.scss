@@ -1,11 +1,18 @@
-.profile{
+.login{
     font-size: 11px;
     position: relative;
     text-align: center;
-    margin-top: 350px;
+    top: 200px;
 
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     &__form{
-        display: inline-block;
+        display: flex;
+        flex-direction:column;
     }
     &__title{
         text-align: left;
@@ -17,23 +24,22 @@
         padding-bottom: 6px;
     }
     &__inputField{
-        width: 500px;
+        width: 400px;
         height: 25px;
         border: 1px solid black;
         border-radius: 0;
         margin-bottom: 10px;
+        outline: none;
     }
 
     &__btn{
-        position: absolute;
-        width: 500px;
-        height: 15px;
+        width: 406px;
         background-color: black;
         color: white;
-        font-weight: bold;
         border: solid black;
         margin-top: 8px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 11px;
     }
 }

@@ -1,11 +1,10 @@
 import React from "react";
 import "./RightPanel.scss";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import CategoryItem from "../categoryItem/CategoryItem";
 export default function RightPanel() {
   let location = useLocation();
   let urlParams = new URLSearchParams(location.search);
-  let [searchParms, setSearchParms] = useSearchParams();
   let sortBy = [
     "Latest arrivals",
     "Trending",
@@ -37,6 +36,7 @@ export default function RightPanel() {
           {sortBy.map((item, curr) => {
             return (
               <CategoryItem
+                key={crypto.randomUUID()}
                 urlParams={urlParams}
                 item={item}
                 location={location}
@@ -53,10 +53,11 @@ export default function RightPanel() {
         {colorsList.map((item, curr) => {
           return (
             <CategoryItem
+              key={crypto.randomUUID()}
               urlParams={urlParams}
               item={item}
               location={location}
-              type="colors"
+              type="color"
             />
           );
         })}

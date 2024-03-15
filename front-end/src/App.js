@@ -1,6 +1,7 @@
 // Library Imports
 import { Route, Routes } from "react-router-dom";
 import React from "react";
+import { CartProvider } from "./components/accounts/cart/cartContext/CartContext";
 // Component Imports
 import NavBar from "./components/navBar/NavBar";
 import OpenAi from "./components/openAi/OpenAi";
@@ -8,19 +9,21 @@ import Home from "./components/Home/Home";
 import GearIndex from "./components/gearIndex/GearIndex";
 import ItemDetail from "./components/itemDetail/ItemDetail";
 import FourOFour from "./components/404/FourOFour";
-import Profile from "./components/accounts/profile/Profile";
+import Login from "./components/accounts/login/Login";
 import Cart from "./components/accounts/cart/Cart";
 import ProgressTracker from "./components/accounts/progress/Progress";
-import { CartProvider } from "./components/accounts/cart/cartContext/CartContext";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import AuthDetails from "./components/auth/AuthDetails";
-import EmptyView from "./components/emptyView/EmptyView";
-import { FirebaseAuthProvider } from "./components/accounts/firebaseAuthProvider/FirebaseAuthProvider";
+// import AccountDetails from "./components/accounts/accountDetails/accountDetails";
+import CompletePurchase from "./components/accounts/cart/checkout/CompletePurchase";
+// import Address from "./components/accounts/cart/checkout/address/Address";
+// import SecurePay from "./components/accounts/cart/checkout/securePay/SecurePay";
+import OrderSummary from "./components/accounts/cart/checkout/orderSummary/OrderSummary";
 // Page Imports
 // -
 // Hook Imports
-//-
+import { FirebaseAuthProvider } from "./components/accounts/firebaseAuthProvider/FirebaseAuthProvider";
 //Styling Imports
 // -
 
@@ -41,11 +44,13 @@ export default function App() {
           <Route path="/ai" element={<OpenAi />}></Route>
           <Route path="/PT" element={<ProgressTracker />}></Route>
           <Route path="/gear/:productId" element={<ItemDetail />}></Route>
-          <Route path="/login" element={<Profile />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/checkout" element={<CompletePurchase />}></Route>
           <Route path="/404" element={<FourOFour />} />
           <Route path="/*" element={<FourOFour />} />
-          <Route path="/testing" element={<EmptyView />} />
+          <Route path="/testing" element={<OrderSummary />} />
+          {/* <Route path="/search" element={<SearchBar />} /> */}
         </Routes>
       </CartProvider>
     </FirebaseAuthProvider>
