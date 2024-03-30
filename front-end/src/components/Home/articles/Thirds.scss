@@ -1,0 +1,36 @@
+ .thirds{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding-top: 100px;
+
+    &__card{
+        height: 420px;
+        width: 360px;
+        margin: 0 auto;
+
+        img{
+            width: 360px;
+            height: 360px;
+        }
+    }
+
+    &__category{
+        font-weight: 300;
+        font-size: 14px;
+        opacity: 50%;
+        padding-top: 3px;
+    }
+
+    &__title{
+        font-weight: 300;
+        font-size: 18px;
+        padding-top: 4px;
+    }
+
+    &__readMore{
+        padding-top: 8px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #6c6c6c;
+    }
+}
