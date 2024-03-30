@@ -1,0 +1,36 @@
+.fiftyFifty{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+
+    &__card{
+        height: 420px;
+        width: 600px;
+        margin: 0 auto;
+        
+        img{
+            width: 600px;
+            height: auto;
+        }
+    }
+
+    &__category{
+        font-weight: 300;
+        font-size: 14px;
+        opacity: 50%;
+        padding-top: 3px;
+    }
+
+    &__title{
+        font-weight: 300;
+        font-size: 18px;
+        padding-top: 4px;
+    }
+
+    &__readMore{
+        font-weight: 300;
+        font-size: 14px;
+        color: #6c6c6c;
+        padding-top: 8px;
+    }
+}
