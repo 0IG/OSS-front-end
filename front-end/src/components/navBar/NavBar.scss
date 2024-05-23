@@ -2,14 +2,18 @@
     height: 40px;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    &__container{
-        padding: 0 30px;
-        display: flex;
-        justify-content: space-between;
-        margin: 10px auto;
-        max-width: 1800px;
+    &__left{
+        width: fit-content;
+    }
+
+    &__right{
+        width: fit-content;
+        padding-right: 20px;
     }
 
     &__img{

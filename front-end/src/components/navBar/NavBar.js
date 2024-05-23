@@ -14,13 +14,13 @@ export default function NavBar() {
 
   return (
     <div className="navBar">
-      <div className="navBar__hamburgerMenu">
-        <div className="navBar__hamburgerMenuLine"></div>
-        <div className="navBar__hamburgerMenuLineCenter"></div>
-        <div className="navBar__hamburgerMenuLine"></div>
-      </div>
+      <div className="navBar__left">
+        <div className="navBar__hamburgerMenu">
+          <div className="navBar__hamburgerMenuLine"></div>
+          <div className="navBar__hamburgerMenuLineCenter"></div>
+          <div className="navBar__hamburgerMenuLine"></div>
+        </div>
 
-      <div className="navBar__container">
         <ul className="navBar__itemList">
           <li className="navBar__item">
             <Link to="/gear?SO=mens" className="navBar__item">
@@ -48,12 +48,14 @@ export default function NavBar() {
             </button>
           </li>
         </ul>
-        {showSearchBar && <SearchBar />}
-        <nav className="navBar__logo">
-          <Link to="/" className="navBar__img">
-            <img className="navBar__img" src={oss} alt="logo"></img>
-          </Link>
-        </nav>
+      </div>
+      {showSearchBar && <SearchBar />}
+      <nav className="navBar__logo">
+        <Link to="/" className="navBar__img">
+          <img className="navBar__img" src={oss} alt="logo"></img>
+        </Link>
+      </nav>
+      <div className="navBar__right">
         <ul className="navBar__itemList">
           <li className="navBar__item">
             <Link to="/ai" className="navBar__item">
