@@ -1,5 +1,7 @@
 import { useState, CSSProperties } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
+import { leapfrog } from "ldrs";
+
 import "./Loader.scss";
 
 const override = {
@@ -8,20 +10,21 @@ const override = {
   borderColor: "grey",
 };
 
+leapfrog.register();
+
 function Loader() {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("#808080");
 
   return (
     <div className="Loader">
-      <ClipLoader
+      <l-leapfrog
+        size="200"
+        speed="2.5"
         color={color}
         loading={loading}
         cssOverride={override}
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+      ></l-leapfrog>
     </div>
   );
 }

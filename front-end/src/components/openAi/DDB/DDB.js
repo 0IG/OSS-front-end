@@ -1,5 +1,6 @@
 import React from "react";
 import "./DDB.scss";
+
 export default function DDB() {
   return (
     <div className="ddb">
