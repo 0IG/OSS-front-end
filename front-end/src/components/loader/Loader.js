@@ -23,7 +23,6 @@ function Loader() {
         speed="2.5"
         color={color}
         loading={loading}
-        cssOverride={override}
       ></l-leapfrog>
     </div>
   );
