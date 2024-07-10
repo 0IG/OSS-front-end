@@ -2,6 +2,7 @@ import "./EmptyFilter.scss";
 
 export default function EmptyFilter() {
   return (
+    // Confirming the commits
     <div className="emptyFilter">
       <h1 className="emptyFilter__header">
         Sorry, we couldn't find what you were looking for.
