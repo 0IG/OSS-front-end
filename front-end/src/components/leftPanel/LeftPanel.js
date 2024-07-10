@@ -12,7 +12,7 @@ export default function LeftPanel() {
     "RENZO GRACIE",
     "FUJI",
     "RTD",
-    "FUTURE",
+    "FUTURE KIMONOS",
     "BRAUS",
     "FUSION",
     "CONCA",
