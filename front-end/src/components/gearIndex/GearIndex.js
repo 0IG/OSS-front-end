@@ -8,6 +8,7 @@ import "./GearIndex.scss";
 import LeftPanel from "../leftPanel/LeftPanel";
 import RightPanel from "../rightPanel/RightPanel";
 import Loader from "../loader/Loader";
+import EmptyFilter from "../emptyView/EmptyFilter";
 
 const GearIndex = ({ SO }) => {
   const [gear, setGear] = useState([]);
@@ -33,6 +34,8 @@ const GearIndex = ({ SO }) => {
 
   if (gearLoading) {
     return <Loader />;
+  } else if (gear.length === 0) {
+    return <EmptyFilter />;
   } else {
     return (
       <div className="gearIndex">
