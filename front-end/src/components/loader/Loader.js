@@ -1,14 +1,7 @@
-import { useState, CSSProperties } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import { useState } from "react";
 import { leapfrog } from "ldrs";
 
 import "./Loader.scss";
-
-const override = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "grey",
-};
 
 leapfrog.register();
 
