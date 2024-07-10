@@ -1,4 +1,9 @@
 .emptyFilter{
     position: absolute;
     left: 10%;
+
+    &__butters{
+        max-height: 25em;
+        margin-top: 80px;
+    }
 }
