@@ -1,0 +1,28 @@
+.languages{
+    display: flex;
+    position: absolute;
+    margin-top: 35px;
+    right: 175px;
+
+    &__container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+        border: 1px solid #7d7d7d;
+        height: fit-content;
+        background-color: white;
+
+        :hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__lang{
+        background-color: transparent;
+        border: none;
+        font-size: 11px;
+    }
+}

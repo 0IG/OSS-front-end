@@ -15,10 +15,7 @@ import ProgressTracker from "./components/accounts/progress/Progress";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import AuthDetails from "./components/auth/AuthDetails";
-// import AccountDetails from "./components/accounts/accountDetails/accountDetails";
 import CompletePurchase from "./components/accounts/cart/checkout/CompletePurchase";
-// import Address from "./components/accounts/cart/checkout/address/Address";
-// import SecurePay from "./components/accounts/cart/checkout/securePay/SecurePay";
 import OrderSummary from "./components/accounts/cart/checkout/orderSummary/OrderSummary";
 // Page Imports
 // -
@@ -50,7 +47,6 @@ export default function App() {
           <Route path="/404" element={<FourOFour />} />
           <Route path="/*" element={<FourOFour />} />
           <Route path="/testing" element={<OrderSummary />} />
-          {/* <Route path="/search" element={<SearchBar />} /> */}
         </Routes>
       </CartProvider>
     </FirebaseAuthProvider>
