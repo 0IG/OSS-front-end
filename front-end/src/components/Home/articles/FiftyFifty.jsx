@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FiftyFifty.scss";
 export default function FiftyFifty() {
+  const [different, setDifferent] = useState(false);
+
   return (
     <div className="fiftyFifty">
       <div className="fiftyFifty__card">
