@@ -1,16 +1,19 @@
  .thirds{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    // display: grid;
+    display: inline-flex;
+    // grid-template-columns: 1fr 1fr 1fr;
     padding-top: 100px;
+    width: 100%;
+    margin: 0 auto;
 
     &__card{
         height: fit-content;
-        width: 360px;
         margin: 0 auto;
 
+
         img{
-            width: 400px;
             height: auto;
+            width: 435px;
         }
     }
 
@@ -24,7 +27,9 @@
     &__title{
         font-weight: 300;
         font-size: 18px;
-        padding-top: 4px;
+        padding-top: 4px;;
+        margin: auto;
+        max-width: 435px;
     }
 
     &__readMore{

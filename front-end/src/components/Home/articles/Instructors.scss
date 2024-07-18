@@ -11,9 +11,9 @@
         height: fit-content;
         width: 600px;
         margin: 0 auto;
-        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
         img{
-            width: 420px;
+            max-width: 420px;
             height: auto;
         }
     }

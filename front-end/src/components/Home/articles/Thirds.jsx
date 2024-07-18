@@ -19,7 +19,7 @@ export default function Thirds() {
       <div className="thirds__card">
         <img
           className="thirds__img"
-          src="https://external-preview.redd.it/rZIzgoKEcMtH10HYgXej_7Hh3mUmI3SO_e4BDl2Oxy0.jpg?auto=webp&s=37036634504d5fbba1500f7fece61a65a0a2d09c"
+          src="https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/450543436_3790802874501095_2496888212733793066_n.heic?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=dRqwjoBHqUYQ7kNvgEFspEy&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYAp1vDU8cWvC8m4uiOxoQezsHVGyfpfH8Co_Rg5M6R8Iw&oe=669C2902"
         />
         <div className="thirds__info">
           <div className="thirds__category">All-Stars</div>
