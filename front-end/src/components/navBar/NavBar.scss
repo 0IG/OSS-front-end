@@ -7,16 +7,18 @@
     display: inline-flex;
     justify-content: space-between;
 
-    &__left{
+
+
+    &__left {
         width: fit-content;
     }
 
-    &__right{
+    &__right {
         width: fit-content;
         padding-right: 20px;
     }
 
-    &__img{
+    &__img {
         width: 90px;
         height: 40px;
         padding-top: 0px;
@@ -29,16 +31,17 @@
         font-size: 11px;
     }
 
-    &__item{
+    &__item {
         text-decoration: none;
         color: black;
-        :hover{
+
+        :hover {
             text-decoration: underline;
             cursor: pointer;
         }
     }
 
-    &__btn{
+    &__btn {
         background: none;
         border: none;
         font-size: 11px;
@@ -48,27 +51,27 @@
 
 }
 
-@media only screen and (max-width:600px){
-    .navBar{
+@media only screen and (max-width:600px) {
+    .navBar {
         max-width: fit-content;
         display: flex;
 
-        &__container{
+        &__container {
             max-width: fit-content;
         }
 
-        &__itemList{
+        &__itemList {
             display: none;
         }
 
-        &__hamburgerMenu{
+        &__hamburgerMenu {
             display: flex;
             flex-direction: column;
             padding-left: 20px;
             padding-top: 20px;
         }
-        
-        &__hamburgerMenuLine{
+
+        &__hamburgerMenuLine {
             background-color: black;
             border-radius: 1px solid black;
             height: 1px;
@@ -76,7 +79,7 @@
             margin-top: 5px;
         }
 
-        &__hamburgerMenuLineCenter{
+        &__hamburgerMenuLineCenter {
             background-color: rgb(black, 0.4);
             height: 1.5px;
             width: 25px;

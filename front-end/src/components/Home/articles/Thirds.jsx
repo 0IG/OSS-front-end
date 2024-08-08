@@ -14,7 +14,7 @@ export default function Thirds() {
             Rickson speaks about the current state of the sport
           </div>
         </div>
-        <div className="thirds__readMore">Read More →</div>
+        <button className="thirds__readMore">Read More →</button>
       </div>
       <div className="thirds__card">
         <img
@@ -27,7 +27,7 @@ export default function Thirds() {
             Craig Jones starts his own grappling invitational
           </div>
         </div>
-        <div className="thirds__readMore">Read More →</div>
+        <button className="thirds__readMore">Read More →</button>
       </div>
       <div className="thirds__card">
         <img
@@ -41,7 +41,7 @@ export default function Thirds() {
             your game
           </div>
         </div>
-        <div className="thirds__readMore">Read More →</div>
+        <button className="thirds__readMore">Read More →</button>
       </div>
     </div>
   );
