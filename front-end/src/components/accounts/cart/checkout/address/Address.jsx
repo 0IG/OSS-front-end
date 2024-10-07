@@ -11,13 +11,13 @@ export default function Address() {
             Use Other Address +
           </button>
           <div className="address__shipDetails">
-            <li className="address__shipDetailsItem">Isaac Gonzalez</li>
-            <li className="address__shipDetailsItem">221-11 59th Ave</li>
+            <li className="address__shipDetailsItem">Jon Jones</li>
+            <li className="address__shipDetailsItem">123 Main Street</li>
             <li className="address__shipDetailsItem">
-              Oakland Gardens, New York, 11364
+              1428 Elm Street
             </li>
             <li className="address__shipDetailsItem">United States</li>
-            <li className="address__shipDetailsItem">3472004841</li>
+            <li className="address__shipDetailsItem">123-456-7890</li>
             <input type="checkbox" className="address__billingCheckbox" />
             <label className="address__billingLabel">
               Use as billing address
